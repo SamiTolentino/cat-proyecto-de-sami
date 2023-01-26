@@ -1,0 +1,407 @@
+/* Paleta de colores */
+/* 
+Fluorescent Blue - #81F0E5
+Cinnabar - #E94F37
+Oxford Blue - #0B2545
+Cedar Chest - #D9594C
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Space+Mono:ital@0;1&display=swap');
+
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Rubik Gemstones', cursive;
+    font-family: 'Space Mono', monospace;
+}
+
+.img-logo {
+    width: 500px;
+}
+
+.inicio img {
+    width: 50%;
+}
+
+.inicio {
+    text-align: center;
+    margin: 300px 150px;
+    padding: 20px 80px;
+}
+
+
+
+
+
+.inicio h4 {
+    font-size: 23px;
+    font-family: 'Rubik Gemstones', cursive;
+    font-family: 'Space Mono', monospace;
+}
+
+.galeria-1 h1 {
+    text-align: center;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 300px;
+}
+
+.galeria-2 {
+    display: flex;
+    padding: 10px 40px;
+    margin: 80px;
+    margin-top: -320px;
+}
+
+.galeria-2 img {
+    width: 120%;
+    padding: -10px;
+    margin-top: 5px;
+}
+
+.galeria-3 {
+    flex: 25%;
+    padding: 30px 20px;
+    margin: 10px 40px;
+}
+
+.Contacto {
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 235px;
+    height: 450px;
+    margin: 310px 280px;
+    padding: 90px 80px;
+    bottom: 1px solid black;
+    color: red;
+    background-color: yellow
+}
+
+/*NAVEGADOR*/
+
+nav {
+    background: #81F0E5;
+    height: 160px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 14px 30px;
+}
+
+.logo {
+    height: 130px;
+}
+
+nav ul {
+    float: right;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 37px 18px;
+}
+
+nav ul li a {
+    color: #0B2545;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+li a.active,
+li a:hover {
+    background: #D9594C;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #0B2545;
+    float: right;
+    line-height: 190px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.active-nav {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 1165px) {
+    .enlace {
+        padding: 22px 40px;
+    }
+
+    .logo {
+        height: 115px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        margin: 38px 18px;
+    }
+}
+
+@media (max-width: 1043px) {
+    .enlace {
+        padding: 27px 32px;
+    }
+
+    .logo {
+        height: 105px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    nav ul li {
+        margin: 37px 18px;
+    }
+
+}
+
+@media (max-width: 961px) {
+    .checkbtn {
+        display: flex;
+        padding: 8px 20px;
+        margin: 50px 10px;
+        color: #0B2545;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .enlace {
+        padding: 39px 22px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        padding: 0px 33px;
+        height: 100vh;
+        background: beige;
+        top: 160px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a.active,
+    li a:hover {
+        background: #D9594C;
+        transition: .5s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/* NAVEGADOR-FIN */
+
+/* INICIO MAIN*/
+
+.frase__akira h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.frase__akira hr {
+    margin: 1rem 6rem;
+    color: inherit;
+}
+
+/* INICIO MAIN-FIN */
+
+/* INICIO FOOTER */
+
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+}
+
+.redes-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 2px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redes-container ul{
+    padding-left: 0;
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background: var(--facebook); 
+}
+
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes-container ul li .twitter:hover{
+    background: var(--twitter);
+}
+
+/* INICIO FOOTER-FIN */
+
+
+
+
+
+
+
+
+
+
+.biografía {
+    width: 1800px;
+    height: 2400px;
+    margin: -230px 30px;
+    padding: 20px;
+}
+
+.biografía__parrafo {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    width: 800px;
+    height: 420px;
+    margin: 380px 140px;
+    padding: 5px 170px;
+}
+
+.Foto-Biografía {
+    position: relative;
+    top: -400px;
+    left: 900px;
+}
+
+.frase {
+    text-align: center;
+    font-family: 'Rubik Gemstones', cursive;
+    font-family: 'Space Mono', monospace;
+    margin: -300px 320px;
+}
+
+.manga__parrafo {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 800px;
+    height: 648px;
+    margin: 330px 310px;
+}
+
+.manga__dibujo {
+    position: relative;
+    top: -950px;
+    left: 1040px;
+}
+
+.parrafo__aparte {
+    width: 1230px;
+    height: 140px;
+
+}
+
+.parrafo__aparte2 {
+    width: 1120px;
+    height: 330px;
+    margin: 10px 108px;
+}
+
+.manga_dibujo2 {
+    position: relative;
+    top: -385px;
+    left: 305px;
+}
+
+.obras {
+    margin: 300px 108px;
+}
+
+.obras img {
+    width: 70%;
+    border-width: 30px;
+    /* text-align: center; */
+    margin: 0px 230px;
+    padding: 10px 0px;
+}
+
+.obras h3 {
+    font-size: 26px;
+    color: blue;
+    font-family: 'Rubik Gemstones', cursive;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.obras p {
+    background-color: yellow;
+    color: red;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
