@@ -201,7 +201,7 @@ li a:hover {
         width: 100%;
         padding: 0px 33px;
         height: 100vh;
-        background: beige;
+        background: #81F0E5;
         top: 160px;
         left: -100%;
         text-align: center;
@@ -254,14 +254,14 @@ li a:hover {
     --twitter: #55acee;
 }
 
-.redes-container{
+.redes-container {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
 }
 
-.redes-container ul li{
+.redes-container ul li {
     display: inline-block;
     margin: 0 2px;
     width: 50px;
@@ -269,11 +269,11 @@ li a:hover {
     text-align: center;
 }
 
-.redes-container ul{
+.redes-container ul {
     padding-left: 0;
 }
 
-.redes-container ul li a{
+.redes-container ul li a {
     display: block;
     padding: 0 10px;
     background: #333;
@@ -284,25 +284,25 @@ li a:hover {
     transition: .2s;
 }
 
-.redes-container ul:hover a{
+.redes-container ul:hover a {
     filter: blur(2px);
 }
 
-.redes-container ul li a:hover{
+.redes-container ul li a:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
     filter: none;
 }
 
-.redes-container ul li .facebook:hover{
-    background: var(--facebook); 
+.redes-container ul li .facebook:hover {
+    background: var(--facebook);
 }
 
-.redes-container ul li .instagram:hover{
+.redes-container ul li .instagram:hover {
     background: var(--instagram);
 }
 
-.redes-container ul li .twitter:hover{
+.redes-container ul li .twitter:hover {
     background: var(--twitter);
 }
 
