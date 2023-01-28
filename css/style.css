@@ -43,32 +43,6 @@ Cedar Chest - #D9594C
     font-family: 'Space Mono', monospace;
 }
 
-/* .galeria-1 h1 {
-    text-align: center;
-    color: blue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 300px;
-}
-
-.galeria-2 {
-    display: flex;
-    padding: 10px 40px;
-    margin: 80px;
-    margin-top: -320px;
-}
-
-.galeria-2 img {
-    width: 120%;
-    padding: -10px;
-    margin-top: 5px;
-}
-
-.galeria-3 {
-    flex: 25%;
-    padding: 30px 20px;
-    margin: 10px 40px;
-} */
-
 .Contacto {
     font-size: 20px;
     letter-spacing: 1px;
@@ -144,6 +118,7 @@ li a:hover {
 }
 
 @media (max-width: 1165px) {
+
     .enlace {
         padding: 22px 40px;
     }
@@ -159,9 +134,11 @@ li a:hover {
     nav ul li {
         margin: 38px 18px;
     }
+
 }
 
 @media (max-width: 1043px) {
+
     .enlace {
         padding: 27px 32px;
     }
@@ -228,6 +205,7 @@ li a:hover {
     #check:checked~ul {
         left: 0;
     }
+
 }
 
 /* NAVEGADOR-FIN */
@@ -243,8 +221,6 @@ li a:hover {
     margin: 1rem 6rem;
     color: inherit;
 }
-
-
 
 /* INICIO MAIN-FIN */
 
@@ -329,9 +305,9 @@ h1 {
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    width: 80%;
+    width: 70%;
     margin: auto;
-    grid-gap: 5px;
+    grid-gap: 17px;
     padding: 40px 0;
     overflow: hidden;
 }
@@ -348,6 +324,7 @@ h1 {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    border-radius: 5px;
 }
 
 .galeria a:hover img {
@@ -372,37 +349,98 @@ h1 {
 
 .light-box img {
     width: 40vw;
-    max-height: 75vh;
+    max-height: 70vh;
 }
 
 .light-box:target {
-    transform: scale(1);
+    transform: scale(1.3);
 }
 
 .close {
     display: block;
     position: absolute;
-    top: 40px;
-    right: 450px;
-    background: #0B2545;
-    color: #fff;
+    color: white;
+    top: 130px;
+    right: 22rem;
     text-decoration: none;
-    width: 40px;
-    height: 40px;
     text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
 }
 
 .next {
     display: block;
-    background: #0B2545;
-    color: #fff;
-    height: 30px;
-    width: 30px;
+    color: white;
+    height: 33px;
+    width: 20px;
     line-height: 30px;
     text-decoration: none;
     text-align: center;
+    z-index: 5;
+}
+
+@media screen and (max-width:1163px) {
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        width: 90%;
+        margin: auto;
+        grid-gap: 17px;
+        padding: 40px 0;
+        overflow: hidden;
+    }
+
+    .close {
+        right: 18rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .light-box:target {
+        transform: scale(1.6);
+    }
+    .close {
+        top: 190px;
+        right: 15rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .light-box:target {
+        transform: scale(1.8);
+    }
+    .close {
+        top: 220px;
+        right: 12.6rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .light-box:target {
+        transform: scale(2.4);
+    }
+    .close {
+        top: 270px;
+        right: 12rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .light-box:target {
+        transform: scale(2.8);
+    }
+    .close {
+        top: 315px;
+        right: 10rem;
+    }
+}
+
+@media screen and (max-width:352px) {
+    .galeria {
+        width: 250px;
+    }
+    .close {
+        top: 340px;
+        right: 7.5rem;
+    }
 }
 
 
